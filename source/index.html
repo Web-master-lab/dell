@@ -7,8 +7,453 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <nav class="main-nav main-nav--closed">
+        <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-header-desktop.png 1x, img/logo-header-desktop@2x.png 2x">
+            <img src="img/logo-header-mobile.png" srcset="img/logo-header-mobile@2x.png 2x" width="60" height="60" alt="Логотип компании Dell">
+          </picture>
+        </a>
+        <a class="main-nav__search" href="#">
+          <span class="visually-hidden">Поиск.</span>
+        </a>
 
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Новости</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Наш АСЦ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg width="20" height="21">
+                <use xlink:href="img/icons/stack.svg#user"></use>
+              </svg>
+              <span class="visually-hidden">Профиль.</span>
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--desktop">
+            <a class="user-list__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/stack.svg#compare"></use>
+              </svg>
+              <span class="visually-hidden">Сравнение.</span>
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--desktop">
+            <a class="user-list__link" href="#">
+              <img src="img/heart.png" srcset="img/heart@2x.png" width="24" height="24" alt="Избранное">
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg width="25" height="25">
+                <use xlink:href="img/icons/stack.svg#basket"></use>
+              </svg>
+              <span class="visually-hidden">Корзина.</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <p class="promo__subtitle">Новое поступление</p>
+        <p class="title-h2">Лучшие товары <br>от компании Dell</p>
+        <a class="link" href="#">Подробнее</a>
+        <div class="slider swiper">
+
+          <div class="swiper-wrapper">
+            <div class="slider-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider-desktop-1.png 1x, img/slider-desktop-1@2x.png 2x">
+                <img src="img/slider-mobile-1.png" srcset="img/slider-mobile-1@2x.png 2x" width="327" height="325" alt="Серый ноутбук от компании Dell">
+              </picture>
+            </div>
+            <div class="slider-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider-desktop-1.png 1x, img/slider-desktop-1@2x.png 2x">
+                <img src="img/slider-mobile-1.png" srcset="img/slider-mobile-1@2x.png 2x" width="327" height="325" alt="Серый ноутбук от компании Dell">
+              </picture>
+            </div>
+            <div class="slider-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider-desktop-1.png 1x, img/slider-desktop-1@2x.png 2x">
+                <img src="img/slider-mobile-1.png" srcset="img/slider-mobile-1@2x.png 2x" width="327" height="325" alt="Серый ноутбук от компании Dell">
+              </picture>
+            </div>
+            <div class="slider-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider-desktop-1.png 1x, img/slider-desktop-1@2x.png 2x">
+                <img src="img/slider-mobile-1.png" srcset="img/slider-mobile-1@2x.png 2x" width="327" height="325" alt="Серый ноутбук от компании Dell">
+              </picture>
+            </div>
+            <div class="slider-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider-desktop-1.png 1x, img/slider-desktop-1@2x.png 2x">
+                <img src="img/slider-mobile-1.png" srcset="img/slider-mobile-1@2x.png 2x" width="327" height="325" alt="Серый ноутбук от компании Dell">
+              </picture>
+            </div>
+          </div>
+
+          <div class="slider__pagination swiper-pagination"></div>
+          <button class="slider__button-control" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+        </div>
+
+        <div class="promo__wrapper">
+          <div class="promo__text">Выгодное<br> предложение<br> от Dell</div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__heading">
+          <p class="title-h2">Каталог товаров от Dell</p>
+          <p>Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
+          <a class="link" href="#">В каталог</a>
+        </div>
+
+        <article class="card">
+          <a class="card__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog-desktop-1.png 1x, img/catalog-desktop-1@2x.png 2x">
+              <img src="img/catalog-mobile-1.png" srcset="img/catalog-mobile-1@2x 2x" width="302" height="178" alt="Ноутбук фирмы Dell">
+            </picture>
+
+            <p class="card__number">105 товаров</p>
+            <p class="title-h3">Ноутбуки</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog-desktop-2.png 1x, img/catalog-desktop-2@2x.png 2x">
+              <img src="img/catalog-mobile-2.png" srcset="img/catalog-mobile-2@2x 2x" width="210" height="193" alt="Экран с веб-камерой, мышка и клавиатура - фирмы Dell">
+            </picture>
+
+            <p class="card__number">65 товаров</p>
+            <p class="title-h3">Персональные компьютеры</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog-desktop-3.png 1x, img/catalog-desktop-3@2x.png 2x">
+              <img src="img/catalog-mobile-3.png" srcset="img/catalog-mobile-3@2x 2x" width="264" height="107" alt="Сервер фирмы Dell">
+            </picture>
+
+            <p class="card__number">13 товаров</p>
+            <p class="title-h3">Cерверы</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog-desktop-4.png 1x, img/catalog-desktop-4@2x.png 2x">
+              <img src="img/catalog-mobile-4.png" srcset="img/catalog-mobile-4@2x 2x" width="227" height="125" alt="Система хранения данных фирмы Dell">
+            </picture>
+
+            <p class="card__number">2345 товаров</p>
+            <p class="title-h3">Dell EMC</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog-desktop-5.png 1x, img/catalog-desktop-5@2x.png 2x">
+              <img src="img/catalog-mobile-5.png" srcset="img/catalog-mobile-5@2x 2x" width="253" height="167" alt="Запасные части к Dell EMC">
+            </picture>
+
+            <p class="card__number">195 товаров</p>
+            <p class="title-h3">Запасные части к Dell EMC</p>
+          </a>
+        </article>
+      </section>
+
+      <section class="features">
+        <p class="title-h2">Наши преимущества</p>
+        <p class="features__text">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
+        <a class="link" href="#">Оставить заявку</a>
+
+        <ul class="features__list">
+          <li class="features__item">
+            <p class="features__title">У нас самые выгодные и низкие цены </p>
+            <p class="features__text">В наличии широкий ассортимент, а также доступные цены на ноутбуки Dell </p>
+          </li>
+          <li class="features__item">
+            <p class="features__title">Авторизованный сервисный центр DELL</p>
+            <p class="features__text">Сертифицированный сервисный центр по ремонту техники Dell в России и странах СНГ</p>
+          </li>
+          <li class="features__item">
+            <p class="features__title">Высокий уровень технической экспертизы </p>
+            <p class="features__text">Мы прошли аттестацию в виде тестирования, где показали высокий уровень знаний</p>
+          </li>
+          <li class="features__item">
+            <p class="features__title">Мы являемся официальным партнером DELL</p>
+            <p class="features__text">Мы лучший официальный поставщик продукции DELL в России и странах СНГ</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news">
+        <p class="title-h2">Последние новости</p>
+        <p class="news__intro">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
+        <a class="link" href="#">Все новости</a>
+
+        <ul class="news__list">
+          <li class="news__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-1.png 1x, img/news-desktop-1@2x.png 2x">
+              <img src="img/news-mobile-1.png" srcset="img/news-mobile-1@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+
+          <li class="news__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-2.png 1x, img/news-desktop-2@2x.png 2x">
+              <img src="img/news-mobile-2.png" srcset="img/news-mobile-2@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+
+          <li class="news__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-3.png 1x, img/news-desktop-3@2x.png 2x">
+              <img src="img/news-mobile-3.png" srcset="img/news-mobile-3@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+
+          <li class="news__item news__item--desktop">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-4.png 1x, img/news-desktop-4@2x.png 2x">
+              <img src="img/news-mobile-4.png" srcset="img/news-mobile-4@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+
+          <li class="news__item news__item--desktop">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-5.png 1x, img/news-desktop-5@2x.png 2x">
+              <img src="img/news-mobile-5.png" srcset="img/news-mobile-5@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+
+          <li class="news__item news__item--desktop">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-desktop-6.png 1x, img/news-desktop-6@2x.png 2x">
+              <img src="img/news-mobile-6.png" srcset="img/news-mobile-6@2x.png" width="324" height="185" alt="">
+            </picture>
+            <p class="news__title">GE использует технологии Dell</p>
+            <p class="news__text">Вы можете посмотреть ещё больше интересных новостей</p>
+            <a class="link link--news" href="#">
+              <span class="visually-hidden">Подробнее.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts">
+        <p class="title-h2">Наши контакты</p>
+        <p class="contacts__text">Вы можете связаться с нашим онлайн-консультантом</p>
+
+        <ul class="conatcts__list">
+          <li class="contacts__item">
+            <p class="contacts__title">Адрес</p>
+            <p class="contacts__text">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">E-mail</p>
+            <a class="contacts__email" href="mailto:dell_ru@gmail.com">dell_ru@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Телефон</p>
+            <a class="contacts__phone" href="tel:+74957370601">+7 495 737-06-01</a>
+            <a class="contacts__phone" href="tel:+74957370601">+7 495 737-06-01</a>
+          </li>
+        </ul>
+
+        <div class="contacts__social">
+          <ul class="contacts__social-list">
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#"></a>
+            </li>
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="request">
+        <p class="title-h2 title-h2--white">Оставьте заявку</p>
+        <p class="request__text">Оставьте свой номер, и мы перезвоним Вам.</p>
+
+        <form action="#" method="post">
+          <label class="request__label">
+            <span>Ваше имя</span>
+            <input class="request__input" type="text" name="name" required>
+          </label>
+          <label class="request__label">
+            <span>Номер телефона</span>
+            <input class="request__input" type="tel" name="phone" required>
+          </label>
+          <label class="request__label">
+            <span>Комментарий</span>
+            <textarea name="comment" cols="30" rows="5"></textarea>
+          </label>
+          <button class="link link--button" type="submit">Заказать</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="additional-nav">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-footer-desktop.png 1x, img/logo-footer-desktop@2x.png 2x">
+            <img src="img/logo-footer-mobile.png" srcset="img/logo-footer-mobile@2x.png 2x" width="70" height="71" alt="Логотип компании Dell">
+          </picture>
+        </a>
+
+        <div class="additional-nav__wrapper">
+          <p class="additional-nav__title">Помощь</p>
+          <ul class="additional-nav__list">
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">FAQ</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Наш АСЦ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="additional-nav__wrapper">
+          <p class="additional-nav__title">Личный кабинет</p>
+          <ul class="additional-nav__list">
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Профиль</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">История заказов</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">SMS-уведомления</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Избранное</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Сравнение товаров</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="additional-nav__wrapper">
+          <p class="additional-nav__title">Каталог</p>
+          <ul class="additional-nav__list">
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Персональные компьютеры</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Запасные части к Dell EMC</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Ноутбуки</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Серверы</a>
+            </li>
+            <li class="additional-nav__item">
+              <a class="additional-nav__link" href="#">Dell EMC</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="footer-contacts">
+        <ul class="conatcts__list">
+          <li class="footer-contacts__item">
+            <p class="footer-contacts__title">Адрес</p>
+            <p class="footer-contacts__text">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+          </li>
+          <li class="footer-contacts__item">
+            <p class="footer-contacts__title">E-mail</p>
+            <a class="footer-contacts__email" href="mailto:dell_ru@gmail.com">dell_ru@gmail.com</a>
+          </li>
+          <li class="footer-contacts__item">
+            <p class="footer-contacts__title">Телефон</p>
+            <a class="footer-contacts__phone" href="tel:+74957370601">+7 495 737-06-01</a>,
+            <a class="footer-contacts__phone" href="tel:+74957370601">+7 495 737-06-01</a>
+          </li>
+        </ul>
+
+        <div class="footer-contacts__social">
+          <ul class="footer-contacts__social-list">
+            <li class="footer-contacts__social-item">
+              <a class="footer-contacts__social-link" href="#"></a>
+            </li>
+            <li class="footer-contacts__social-item">
+              <a class="footer-contacts__social-link" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
