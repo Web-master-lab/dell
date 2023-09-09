@@ -1,0 +1,45 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: auto;
+}
+
+.main-nav__search {
+  display: flex;
+  width: 46px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__toggle {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.main-nav--closed .site-list {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../img/open.svg");
+}
+
+.main-nav--opened .site-list {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../../img/close.svg");
+}

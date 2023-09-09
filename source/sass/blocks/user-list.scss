@@ -1,0 +1,23 @@
+.user-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.user-list__item {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f9f9f9;
+  border-radius: 50%;
+
+  &--desktop {
+    display: none;
+  }
+}

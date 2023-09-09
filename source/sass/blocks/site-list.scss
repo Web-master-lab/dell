@@ -1,0 +1,28 @@
+.site-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+
+  background-color: #ffffff;
+
+  list-style-type: none;
+}
+
+.site-list__item {
+  width: 100vw;
+  padding: 22px 38px 23px;
+
+  background-color: #ffffff;
+}
+
+.site-list__link {
+  color: #292d32;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}

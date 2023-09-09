@@ -1,0 +1,41 @@
+.promo__wrapper-slider {
+  padding: 80px 15px 20px;
+  background-color: #f2f2f2;
+}
+
+.promo__subtitle {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  color: #838383;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.promo__wrapper {
+  padding: 59px 15px;
+
+  background-color: #f9f9f9;
+  background-image: url("../../img/promo.png");
+  background-repeat: no-repeat;
+  background-position: 118px 15px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/promo@2x.png");
+    background-size: 252px 166px;
+  }
+}
+
+.promo__text {
+  color: #292d32;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.promo__title {
+  margin-bottom: 28px;
+}
+
+.promo__link {
+  margin-bottom: 10px;
+}

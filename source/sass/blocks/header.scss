@@ -1,0 +1,9 @@
+.header {
+  position: relative;
+
+  padding: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 260px 26px;
+  }
+}
